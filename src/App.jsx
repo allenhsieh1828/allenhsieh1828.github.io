@@ -52,8 +52,15 @@ function App() {
           </header>
 
           <p className="intro-text">
-            我畢業於亞洲大學資訊工程學系，具備扎實的程式基礎，並專注於 web 前端開發方向的學習與實作，主要學習與使用 HTML、CSS、JavaScript，並以 React 作為主要的前端框架進行實作練習。
+            我畢業於亞洲大學資訊工程學系，具備扎實的程式基礎，並專注於 web 前端開發方向的學習與實作。
           </p>
+          <p className="intro-text">
+            主要學習與使用 HTML、CSS、JavaScript，並以 React 作為主要的前端框架進行實作練習，喜歡架設網站與特效進行一些有趣的互動。也會特別留意版面結構與使用者操作流程，希望做出不只是「能用」，而是「好用」的介面。樂於與設計或後端角色合作，將需求轉化為穩定清楚的前端實作。
+          </p>
+          <p className="intro-text">
+            未來希望多多參與產品開發流程，持續精進前端技術。
+          </p>
+          
         </div>
       </section>
 
