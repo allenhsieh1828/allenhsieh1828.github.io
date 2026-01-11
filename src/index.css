@@ -1,0 +1,20 @@
+/* index.css */
+:root {
+  --bg-color: #0d0216; /* 深紫色背景 */
+  --text-color: #ffffff;
+  --accent-color: #e094ff; /* 標題裝飾色 */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Microsoft JhengHei", -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
