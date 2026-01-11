@@ -3,7 +3,7 @@ import './App.css';
 import bgMusic from './assets/bg-music.mp3';
 // 匯入照片：請確保路徑與副檔名（JPG）完全正確
 import avatarImg from './assets/avatar.JPG'; 
-import backgroundWall from './assets/background.JPG';
+import backgroundWall from './assets/background.jpg';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
