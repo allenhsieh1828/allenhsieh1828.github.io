@@ -1,9 +1,18 @@
 import React, { useState, useRef } from 'react';
 import './App.css';
 import bgMusic from './assets/bg-music.mp3';
-// 匯入照片：請確保路徑與副檔名（JPG）完全正確
-import avatarImg from './assets/avatar.JPG'; 
+import avatarImg from './assets/avatar.jpg'; 
 import backgroundWall from './assets/background.jpg';
+
+// --- 新增：引入技能圖標圖片 ---
+// 請確保將您提供的圖片放入 assets 資料夾，並確認檔名正確
+import cssImg from './assets/image_1.png';   // CSS 圖片
+import jsImg from './assets/image_2.png';    // JavaScript 圖片
+import htmlImg from './assets/image_3.png';  // HTML 圖片
+import reactImg from './assets/image_4.png'; // React 圖片
+import awsImg from './assets/image_5.png';   // AWS 圖片
+// ---------------------------
+
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -17,6 +26,9 @@ function App() {
     }
     setIsPlaying(!isPlaying);
   };
+
+  // 定義一個通用的圖片樣式，確保它們在格子內適當縮放
+  const iconImgStyle = { width: '70%', height: 'auto', objectFit: 'contain' };
 
   return (
     <div className="app-container">
@@ -53,30 +65,53 @@ function App() {
         <section className="skills-section">
           <h2 className="section-title">技能</h2>
           <div className="skills-grid">
+            
+            {/* HTML 項目 - 使用 image_3.png */}
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#e34f26', fontWeight:'bold'}}>HTML</span></div>
+              <div className="icon-box">
+                <img src={htmlImg} alt="HTML" style={iconImgStyle} />
+              </div>
               <p>HTML</p>
             </div>
+
+            {/* CSS 項目 - 使用 image_1.png */}
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#1572b6', fontWeight:'bold'}}>CSS3</span></div>
+              <div className="icon-box">
+                <img src={cssImg} alt="CSS" style={iconImgStyle} />
+              </div>
               <p>CSS</p>
             </div>
+
+            {/* JavaScript 項目 - 使用 image_2.png 並將文字從 Java 改為 JavaScript */}
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#f7df1e', fontWeight:'bold'}}>Java</span></div>
-              <p>Java</p>
+              <div className="icon-box">
+                <img src={jsImg} alt="JavaScript" style={iconImgStyle} />
+              </div>
+              <p>JavaScript</p>
             </div>
+
+            {/* Cursor 項目 - 未提供圖片，維持原樣 */}
             <div className="skill-item">
               <div className="icon-box"><span style={{color:'#fff', fontWeight:'bold'}}>Cursor</span></div>
               <p>Cursor</p>
             </div>
+
+            {/* AWS 項目 - 使用 image_5.png */}
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#0072E3', fontWeight:'bold'}}>AWS</span></div>
+              <div className="icon-box">
+                <img src={awsImg} alt="AWS" style={iconImgStyle} />
+              </div>
               <p>AWS</p>
             </div>
+
+            {/* React 項目 - 使用 image_4.png */}
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#00FFFF', fontWeight:'bold'}}>React</span></div>
+              <div className="icon-box">
+                <img src={reactImg} alt="React" style={iconImgStyle} />
+              </div>
               <p>React</p>
             </div>
+
             <div className="skill-item">
               <div className="icon-box"><span style={{color:'#c9a063', fontWeight:'bold'}}>敬請期待</span></div>
             </div>
