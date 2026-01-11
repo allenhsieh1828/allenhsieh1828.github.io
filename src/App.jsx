@@ -6,11 +6,11 @@ import backgroundWall from './assets/background.jpg';
 
 // --- 新增：引入技能圖標圖片 ---
 // 請確保將您提供的圖片放入 assets 資料夾，並確認檔名正確
-import cssImg from './assets/image_1.png';   // CSS 圖片
-import jsImg from './assets/image_2.png';    // JavaScript 圖片
-import htmlImg from './assets/image_3.png';  // HTML 圖片
-import reactImg from './assets/image_4.png'; // React 圖片
-import awsImg from './assets/image_5.png';   // AWS 圖片
+import cssImg from './assets/css.jpg';   // CSS 圖片
+import jsImg from './assets/javascript.jpg';    // JavaScript 圖片
+import htmlImg from './assets/html.jpg';  // HTML 圖片
+import reactImg from './assets/react.jpg'; // React 圖片
+import awsImg from './assets/aws.jpg';   // AWS 圖片
 // ---------------------------
 
 
@@ -66,48 +66,48 @@ function App() {
           <h2 className="section-title">技能</h2>
           <div className="skills-grid">
             
-            {/* HTML 項目 - 使用 image_3.png */}
+            {/* HTML 項目 - 使用 html.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={htmlImg} alt="HTML" style={iconImgStyle} />
+                <img src={html.jpg} alt="HTML" style={iconImgStyle} />
               </div>
               <p>HTML</p>
             </div>
 
-            {/* CSS 項目 - 使用 image_1.png */}
+            {/* CSS 項目 - 使用 css.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={cssImg} alt="CSS" style={iconImgStyle} />
+                <img src={css.jpg} alt="CSS" style={iconImgStyle} />
               </div>
               <p>CSS</p>
             </div>
 
-            {/* JavaScript 項目 - 使用 image_2.png 並將文字從 Java 改為 JavaScript */}
+            {/* JavaScript 項目 - 使用  JavaScript.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={jsImg} alt="JavaScript" style={iconImgStyle} />
+                <img src={js.jpg} alt="JavaScript" style={iconImgStyle} />
               </div>
               <p>JavaScript</p>
             </div>
 
-            {/* Cursor 項目 - 未提供圖片，維持原樣 */}
+            {/* Cursor 項目 - 維持原樣 */}
             <div className="skill-item">
               <div className="icon-box"><span style={{color:'#fff', fontWeight:'bold'}}>Cursor</span></div>
               <p>Cursor</p>
             </div>
 
-            {/* AWS 項目 - 使用 image_5.png */}
+            {/* AWS 項目 - 使用 aws.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={awsImg} alt="AWS" style={iconImgStyle} />
+                <img src={aws.jpg} alt="AWS" style={iconImgStyle} />
               </div>
               <p>AWS</p>
             </div>
 
-            {/* React 項目 - 使用 image_4.png */}
+            {/* React 項目 - 使用 react.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={reactImg} alt="React" style={iconImgStyle} />
+                <img src={react.jpg} alt="React" style={iconImgStyle} />
               </div>
               <p>React</p>
             </div>
