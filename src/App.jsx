@@ -6,7 +6,7 @@ import backgroundWall from './assets/background.jpg';
 
 // --- 引入技能圖標圖片 ---
 import cssImg from './assets/css.jpg';    
-import jsImg from './assets/javascript.jpg';  
+import javascriptImg from './assets/javascript.jpg';  
 import htmlImg from './assets/html.jpg';  
 import reactImg from './assets/react.jpg'; 
 import awsImg from './assets/aws.jpg';    
@@ -79,7 +79,7 @@ function App() {
 
             <div className="skill-item">
               <div className="icon-box">
-                <img src={jsImg} alt="JavaScript" style={iconImgStyle} />
+                <img src={javascriptImg} alt="JavaScript" style={iconImgStyle} />
               </div>
               <p>JavaScript</p>
             </div>
