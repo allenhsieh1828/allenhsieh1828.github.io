@@ -4,15 +4,13 @@ import bgMusic from './assets/bg-music.mp3';
 import avatarImg from './assets/avatar.jpg'; 
 import backgroundWall from './assets/background.jpg';
 
-// --- 新增：引入技能圖標圖片 ---
-// 請確保將您提供的圖片放入 assets 資料夾，並確認檔名正確
-import cssImg from './assets/css.jpg';   // CSS 圖片
-import jsImg from './assets/javascript.jpg';    // JavaScript 圖片
-import htmlImg from './assets/html.jpg';  // HTML 圖片
-import reactImg from './assets/react.jpg'; // React 圖片
-import awsImg from './assets/aws.jpg';   // AWS 圖片
+// --- 引入技能圖標圖片 ---
+import cssImg from './assets/css.jpg';    
+import jsImg from './assets/javascript.jpg';  
+import htmlImg from './assets/html.jpg';  
+import reactImg from './assets/react.jpg'; 
+import awsImg from './assets/aws.jpg';    
 // ---------------------------
-
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -27,14 +25,14 @@ function App() {
     setIsPlaying(!isPlaying);
   };
 
-  // 定義一個通用的圖片樣式，確保它們在格子內適當縮放
+  // 定義一個通用的圖片樣式
   const iconImgStyle = { width: '70%', height: 'auto', objectFit: 'contain' };
 
   return (
     <div className="app-container">
       <audio ref={audioRef} src={bgMusic} loop />
 
-      {/* 頂部區域：透過 style 注入不同的背景照片 */}
+      {/* 頂部區域 */}
       <section 
         className="hero-section"
         style={{ 
@@ -43,20 +41,18 @@ function App() {
       >
         <div className="hero-content">
           <header className="hero-header">
-            {/* 左側：姓名資訊 */}
             <div className="title-area">
               <p className="subtitle">理工之男</p>
               <h1>謝博丞</h1>
             </div>
 
-            {/* 右側：顯示大頭貼照片 */}
             <div className="profile-avatar">
               <img src={avatarImg} alt="個人頭像" />
             </div>
           </header>
 
           <p className="intro-text">
-            我畢業於亞洲大學資訊工程學系，具備扎實的程式基礎，並專注於 web 前端開發方向的學習與實作，主要學習與使用 HTML、CSS、JavaScript，並以 React 作為主要的前端框架進行實作練習，喜歡架設網站與特效進行一些有趣的互動。也會特別留意版面結構與使用者操作流程，希望做出不只是「能用」，而是「好用」的介面。樂於與設計或後端角色合作，將需求轉化為穩定清楚的前端實作。未來希望多多參與產品開發流程，持續精進前端技術。
+            我畢業於亞洲大學資訊工程學系，具備扎實的程式基礎，並專注於 web 前端開發方向的學習與實作，主要學習與使用 HTML、CSS、JavaScript，並以 React 作為主要的前端框架進行實作練習。
           </p>
         </div>
       </section>
@@ -66,54 +62,53 @@ function App() {
           <h2 className="section-title">技能</h2>
           <div className="skills-grid">
             
-            {/* HTML 項目 - 使用 html.jpg */}
+            {/* 修正：src 必須對應上面 import 的變數名稱 */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={html.jpg} alt="HTML" style={iconImgStyle} />
+                <img src={htmlImg} alt="HTML" style={iconImgStyle} />
               </div>
               <p>HTML</p>
             </div>
 
-            {/* CSS 項目 - 使用 css.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={css.jpg} alt="CSS" style={iconImgStyle} />
+                <img src={cssImg} alt="CSS" style={iconImgStyle} />
               </div>
               <p>CSS</p>
             </div>
 
-            {/* JavaScript 項目 - 使用  JavaScript.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={js.jpg} alt="JavaScript" style={iconImgStyle} />
+                <img src={jsImg} alt="JavaScript" style={iconImgStyle} />
               </div>
               <p>JavaScript</p>
             </div>
 
-            {/* Cursor 項目 - 維持原樣 */}
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#fff', fontWeight:'bold'}}>Cursor</span></div>
+              <div className="icon-box">
+                <span style={{color:'#fff', fontWeight:'bold'}}>Cursor</span>
+              </div>
               <p>Cursor</p>
             </div>
 
-            {/* AWS 項目 - 使用 aws.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={aws.jpg} alt="AWS" style={iconImgStyle} />
+                <img src={awsImg} alt="AWS" style={iconImgStyle} />
               </div>
               <p>AWS</p>
             </div>
 
-            {/* React 項目 - 使用 react.jpg */}
             <div className="skill-item">
               <div className="icon-box">
-                <img src={react.jpg} alt="React" style={iconImgStyle} />
+                <img src={reactImg} alt="React" style={iconImgStyle} />
               </div>
               <p>React</p>
             </div>
 
             <div className="skill-item">
-              <div className="icon-box"><span style={{color:'#c9a063', fontWeight:'bold'}}>敬請期待</span></div>
+              <div className="icon-box">
+                <span style={{color:'#c9a063', fontWeight:'bold'}}>敬請期待</span>
+              </div>
             </div>
           </div>
         </section>
